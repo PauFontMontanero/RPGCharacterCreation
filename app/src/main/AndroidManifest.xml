@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RPGCharacterCreation"
+        tools:targetApi="31">
+        <activity
+            android:name="._0main_menu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="._1character_name"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+        <activity
+            android:name="._2character_race_class"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+        <activity
+            android:name="._3character_attributes"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+        <activity
+            android:name="._4character_description"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+        <activity
+            android:name="._5character_weapon"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+        <activity
+            android:name="._6character_sheet"
+            android:exported="false"
+            android:parentActivityName="._0main_menu">
+        </activity>
+    </application>
+
+</manifest>
