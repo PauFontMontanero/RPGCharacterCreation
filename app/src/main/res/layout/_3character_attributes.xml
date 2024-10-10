@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/Title"
@@ -25,98 +25,253 @@
         android:text="->"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
-    <EditText
-        android:id="@+id/Strength"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Strength"
-        android:inputType="number"
+    <SeekBar
+        android:id="@+id/strengthSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
-
-    <EditText
-        android:id="@+id/Dexterity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Dexterity"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Strength"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/Constitution"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Constitution"
-        android:inputType="number"
+    <SeekBar
+        android:id="@+id/dexteritySeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Dexterity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/strengthSeekBar"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/Intelligence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Intelligence"
-        android:inputType="number"
+    <SeekBar
+        android:id="@+id/constitutionSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Constitution"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/dexteritySeekBar"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/Wisdom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Wisdom"
-        android:inputType="number"
+    <SeekBar
+        android:id="@+id/intelligenceSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Intelligence"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/constitutionSeekBar"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/Charisma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Charisma"
-        android:inputType="number"
+    <SeekBar
+        android:id="@+id/wisdomSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Wisdom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/intelligenceSeekBar"
         app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/charismaSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wisdomSeekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/strengthSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dexterity"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dexteritySeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/strengthSeekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constitution"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/constitutionSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/dexteritySeekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intelligence"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/intelligenceSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/constitutionSeekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wisdom"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/wisdomSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/intelligenceSeekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charisma"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/charismaSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wisdomSeekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/StrengthValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/strengthSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/DexterityValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dexteritySeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/StrengthValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ConstitutionValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/constitutionSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/DexterityValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/IntelligenceValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/ConstitutionValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/WisdomValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wisdomSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/IntelligenceValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/CharismaValue"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/charismaSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/WisdomValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="45dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

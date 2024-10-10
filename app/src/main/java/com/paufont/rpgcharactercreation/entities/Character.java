@@ -40,6 +40,9 @@ public class Character implements Serializable {
         CreationDate = creationDate;
     }
 
+    public Character() {
+    }
+
     public String getName() {
         return Name;
     }

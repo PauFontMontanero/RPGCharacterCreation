@@ -2,10 +2,10 @@ package com.paufont.rpgcharactercreation
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.paufont.rpgcharactercreation.entities.Character
 
 class _0main_menu : AppCompatActivity() {
     companion object {
@@ -19,7 +19,8 @@ class _0main_menu : AppCompatActivity() {
     fun goto_1character_name(view: View){
 
         var i = Intent(_0main_menu@this,_1character_name::class.java)
-
+        val myObject = Character()
+        i.putExtra("character", myObject)
         startActivityForResult(i, REQUEST_CODE)
     }
 }
